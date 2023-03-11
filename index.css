@@ -8,8 +8,11 @@ body {
   height: 100%;
   font-family: "Roboto", sans-serif;
 }
+.everything {
+  width: 100%;
+}
 .header-div {
-  background-color: #181818;
+  background-color: #181818e1;
   color: white;
   margin: 0;
   padding: 15px 0;
@@ -18,11 +21,13 @@ body {
   letter-spacing: 2px;
   font-size: 14px;
   height: 35px;
+  position: fixed;
+  top: 0;
 }
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -45,21 +50,12 @@ body {
 }
 
 .main-info {
-  margin: 0 140px 0 0;
-  position: relative;
-  width: 460px;
-  height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.main-info img,
-p {
-  position: absolute;
-  width: 100%;
-}
 .main-info p {
-  padding: 10px;
-  bottom: 0;
-  left: 0;
   color: #6e6e6e;
   margin: 0;
   width: 600px;
@@ -68,7 +64,113 @@ p {
   letter-spacing: 1.2px;
 }
 
+.main-info img {
+  object-fit: none;
+  width: 500px;
+  height: 138px;
+}
+
 .name-span {
   font-size: 28px;
   font-weight: 600;
+}
+
+.email-div {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: auto;
+  right: 40px;
+  z-index: 10;
+}
+
+.email-div a {
+  color: #00b5d4;
+  margin: 10px auto;
+  padding: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: var(--fz-xxs);
+  line-height: var(--fz-lg);
+  letter-spacing: 0.1em;
+  writing-mode: vertical-rl;
+  text-decoration: none;
+}
+
+.email-div::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: #00b5d4;
+}
+
+.skills-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-color: #181818;
+  padding-top: 30px;
+}
+
+.skills-title-div {
+  margin: auto;
+  width: 50%;
+}
+
+.skills-list {
+  margin: auto;
+  width: 70%;
+}
+
+.skills-title-div h2 {
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
+
+.skills-div p {
+  font-size: 20px;
+  color: #6e6e6e;
+}
+
+.skills-head {
+  font-size: 28px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #6e6e6e;
+}
+
+li img,
+li i {
+  padding-bottom: 10px;
+}
+
+i {
+  font-size: 8em;
+  color: #00b5d4;
+}
+
+.jquery,
+.c-sharp,
+.azure,
+.vs-code,
+.agile {
+  width: 120px;
+  height: 120px;
 }
