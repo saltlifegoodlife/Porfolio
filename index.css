@@ -21,7 +21,7 @@ body {
   letter-spacing: 2px;
   font-size: 14px;
   height: 35px;
-  position: fixed;
+  position: sticky;
   top: 0;
 }
 
@@ -45,7 +45,7 @@ body {
 .main {
   display: flex;
   justify-content: center;
-  margin: 90px 190px 90px auto;
+  margin: 185px 14%;
   width: 75%;
 }
 
