@@ -174,3 +174,9 @@ i {
   width: 120px;
   height: 120px;
 }
+
+.sql {
+  width: 140px;
+  height: 140px;
+  padding-bottom: 0;
+}
