@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,144 +17,177 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="./index.js" defer></script>
+    <title>RossBeckham.Portfolio</title>
   </head>
   <body>
     <div id="beginning" class="everything">
-      <div class="header-div">
+      <nav class="navbar">
+        <div class="brand-title"></div>
+        <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
         <div class="header">
-          <a class="nav-a" href="#beginning">Home</a>
-          <a class="nav-a">Experience</a>
-          <a class="nav-a">About</a>
+          <ul>
+            <li><a class="nav-a" href="#beginning">Home</a></li>
+            <li><a class="nav-a" href="#about">About</a></li>
+            <li>
+              <a
+                class="nav-a"
+                href="https://github.com/saltlifegoodlife?tab=repositories"
+                target="_blank"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-a"
+                href="https://www.linkedin.com/in/rossbeckham/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li><a class="nav-a">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main">
+        <div class="main-info">
+          <img src="./images/jobs-removebg-preview.png" alt="" />
+          <p>
+            <span class="name-span">Ross Beckham</span> is a Software Developer
+            who builds successful applications through clean, modern, scalable
+            and efficient code.
+          </p>
+        </div>
+        <div>
+          <img
+            class="concept-img"
+            src="./images/Ross-concept-removebg-preview.png"
+            alt=""
+          />
+        </div>
+        <div class="email-div">
+          <a href="mailto:rossh.beckham@gmail.com">rossh.beckham@gmail.com</a>
+        </div>
+        <div class="link-div">
           <a
-            class="nav-a"
             href="https://github.com/saltlifegoodlife?tab=repositories"
             target="_blank"
-            >GitHub</a
-          >
-          <a
-            class="nav-a"
-            href="https://www.linkedin.com/in/rossbeckham/"
-            target="_blank"
-            >Linkedin</a
-          >
-          <a class="nav-a">Contact</a>
+            ><i class="fa-brands fa-square-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/rossbeckham/" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </div>
       </div>
-      <div>
-        <div class="main">
-          <div class="main-info">
-            <img src="./images/jobs-removebg-preview.png" alt="" />
-            <p>
-              <span class="name-span">Ross Beckham</span> is a Software
-              Developer who builds successful applications through clean,
-              modern, scalable and efficient code.
-            </p>
-          </div>
-          <div>
-            <img src="./images/Ross-concept-removebg-preview.png" alt="" />
-          </div>
-          <div class="email-div">
-            <a href="mailto:rossh.beckham@gmail.com">rossh.beckham@gmail.com</a>
-          </div>
-          <div class="link-div">
-            <a
-              href="https://github.com/saltlifegoodlife?tab=repositories"
-              target="_blank"
-              ><i class="fa-brands fa-square-github"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/rossbeckham/" target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </div>
+
+      <div class="skills-div">
+        <div class="skills-title-div">
+          <h2>SKILLS &amp; TOOLS</h2>
+          <p>
+            The skills and technology that I use to create successful solutions:
+          </p>
         </div>
+        <div class="skills-list">
+          <ul>
+            <li><i class="fa-brands fa-square-js"></i>Javascript</li>
+            <li>
+              <img
+                class="jquery"
+                src="./images/icons8-jquery-100.png"
+                alt=""
+              />JQuery
+            </li>
+            <li><i class="fa-brands fa-react"></i>React</li>
+            <li><i class="fa-brands fa-node-js"></i>Node.js</li>
+            <li>
+              <img
+                class="c-sharp"
+                src="./images/icons8-c-sharp-logo-100.png"
+                alt=""
+              />
+              C-Sharp
+            </li>
+            <li><i class="fa-brands fa-microsoft"></i>.NET Core</li>
 
-        <div class="skills-div">
-          <div class="skills-title-div">
-            <h2>SKILLS &amp; TOOLS</h2>
-            <p>
-              The skills and technology that I use to create successful
-              solutions:
-            </p>
-          </div>
-          <div class="skills-list">
-            <ul>
-              <li><i class="fa-brands fa-square-js"></i>Javascript</li>
-              <li>
-                <img
-                  class="jquery"
-                  src="./images/icons8-jquery-100.png"
-                  alt=""
-                />JQuery
-              </li>
-              <li><i class="fa-brands fa-react"></i>React</li>
-              <li><i class="fa-brands fa-node-js"></i>Node.js</li>
-              <li>
-                <img
-                  class="c-sharp"
-                  src="./images/icons8-c-sharp-logo-100.png"
-                  alt=""
-                />
-                C-Sharp
-              </li>
-              <li><i class="fa-brands fa-microsoft"></i>.NET Core</li>
-
-              <li>
-                <img
-                  class="sql"
-                  src="./images/sql-removebg-preview.png"
-                  alt=""
-                />SQL
-              </li>
-              <li><i class="fa-brands fa-html5"></i>HTML5</li>
-              <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
-              <li><i class="fa-brands fa-sass"></i>Sass</li>
-              <li>
-                <img
-                  class="azure"
-                  src="./images/icons8-azure-144.png"
-                  alt=""
-                />Azure
-              </li>
-              <li><i class="fa-solid fa-gears"></i>RESTful APIs</li>
-              <li><i class="fa-brands fa-git-alt"></i>Git</li>
-              <li><i class="fa-brands fa-github"></i>GitHub</li>
-              <li>
-                <img
-                  class="vs-code"
-                  src="./images/icons8-visual-studio-144.png"
-                  alt=""
-                />VS Code
-              </li>
-              <li><i class="fa-brands fa-jira"></i>Jira</li>
-              <li>
-                <img
-                  class="agile"
-                  style="color: #00b5b4"
-                  src="./images/icons8-agile-100.png"
-                  alt=""
-                />Agile
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="about-section">
-          <div class="about-info">
-            <img src="./images/ross.jpg" alt="Ross Beckham with a suit on" />
-
-            <h2>About Me</h2>
-            <p>
-              <span class="quote">"</span>Lorem ipsum, or lipsum as it is
-              sometimes known, is dummy text used in laying out print, graphic
-              or web designs. The purpose of lorem ipsum is to create a natural
-              looking block of text (sentence, paragraph, page, etc.) that
-              doesn't distract from the layout. A practice not without
-              controversy, laying out pages with meaningless filler text can be
-              very useful when the focus is meant to be on design, not
-              content.<span class="quote">"</span>
-            </p>
-          </div>
+            <li>
+              <img
+                class="sql"
+                src="./images/sql-removebg-preview.png"
+                alt=""
+              />SQL
+            </li>
+            <li><i class="fa-brands fa-html5"></i>HTML5</li>
+            <li><i class="fa-brands fa-css3-alt"></i>CSS3</li>
+            <li><i class="fa-brands fa-sass"></i>Sass</li>
+            <li>
+              <img
+                class="azure"
+                src="./images/icons8-azure-144.png"
+                alt=""
+              />Azure
+            </li>
+            <li><i class="fa-solid fa-gears"></i>RESTful APIs</li>
+            <li><i class="fa-brands fa-git-alt"></i>Git</li>
+            <li><i class="fa-brands fa-github"></i>GitHub</li>
+            <li>
+              <img
+                class="vs-code"
+                src="./images/icons8-visual-studio-144.png"
+                alt=""
+              />VS Code
+            </li>
+            <li><i class="fa-brands fa-jira"></i>Jira</li>
+            <li>
+              <img
+                class="agile"
+                style="color: #00b5b4"
+                src="./images/icons8-agile-100.png"
+                alt=""
+              />Agile
+            </li>
+          </ul>
         </div>
       </div>
+      <div id="about" class="about-section">
+        <img src="./images/ross.jpg" alt="Ross Beckham with a suit on" />
+        <div class="about-info">
+          <h2>About Me</h2>
+          <p>
+            <span class="quote">"</span>Hi, my name is Ross Beckham. I am a Web
+            Developer and Software Engineer. I have always had a passion with
+            computers and took a few college classes in Computer Science. Life
+            took a turn so I had to take a break from school. I started working
+            at a production plant as a production team leader that taught me
+            quality, standardization, and team work skills that I now use in my
+            software development career. I finally had the opportunity to attend
+            TrueCoders Coding Bootcamp to continue my journey of learning
+            software development. When I finished with TrueCoders, Crossvale
+            gave me the chance to prove myself and helped me grow into who I am
+            today.
+          </p>
+          <p>
+            I have two years of development experience with Crossvale Inc.
+            helping multiple clients maintain code and build new features. As I
+            went to each of my clients, I developed new skills with different
+            technologies that allowed me to grow as a developer. In just a short
+            time, I was exposed to full stack .NET applications and building out
+            SQL databases to designing the front end of a newly built app using
+            Angular and Typescript. I even had to learn the cloud to help one of
+            my clients lift and shift their on premise system to Azure.
+          </p>
+          <p>
+            It has been a steep learning curve but has also been an exciting and
+            fulfilling experience. I am currently learning full stack web
+            development using Javascript, React, and Nodejs to broaden my
+            knowledge at TrueCoders. With these skills I want to create modern,
+            responsive, quality websites and other applications. I would love to
+            have a conversation about my passion in the tech world with
+            you!<span class="quote">"</span>
+          </p>
+        </div>
+      </div>
+
       <footer></footer>
     </div>
   </body>

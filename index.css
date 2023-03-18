@@ -1,6 +1,11 @@
 html {
   height: 100%;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --font-color-grey: #6e6e6e;
   --color-turquoise: #00b5d4;
@@ -17,41 +22,61 @@ body {
 .everything {
   width: 100%;
 }
-.header-div {
-  background-color: #181818e1;
-  color: white;
-  margin: 0;
-  padding: 15px 0;
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 2px;
-  font-size: 14px;
-  height: 35px;
-  position: sticky;
-  top: 0;
-}
 
-.header {
+.navbar {
+  background-color: #181818e1;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.brand-title {
+  padding: 22px 0;
+}
+
+.hamburger {
+  font-size: 30px;
+  display: none;
+  position: absolute;
+  right: 0;
+  margin: 0 20px 0 0;
+}
+.hamburger i {
+  color: white;
+}
+.header {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+}
+.header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+  list-style-type: none;
 }
 
 .nav-a,
 .nav-a:link {
-  padding: 10px 30px;
+  display: block;
   text-decoration: none;
   color: white;
+  padding: 20px;
 }
 
-.nav-a:hover {
-  color: var(--color-turquoise);
+.nav-a:hover,
+.nav-a:focus {
+  background-color: var(--font-color-grey);
 }
 
 .main {
   display: flex;
   justify-content: center;
-  margin: 185px 14%;
+  margin: 187px 14%;
   width: 75%;
 }
 
@@ -175,13 +200,14 @@ body {
   font-size: 28px;
 }
 
-ul {
+.skills-list ul {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-li {
+.skills-list li {
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -191,12 +217,12 @@ li {
   color: var(--font-color-grey);
 }
 
-li img,
-li i {
+.skills-list li img,
+.skills-list li i {
   padding-bottom: 10px;
 }
 
-i {
+.skills-list i {
   font-size: 8em;
   color: var(--color-turquoise);
 }
@@ -240,7 +266,7 @@ i {
   width: 350px;
   object-position: 55% 31%;
   float: right;
-  margin: 0 30px;
+  margin: 0 20% 0 10px;
   box-shadow: 10px 25px 35px gray;
 }
 
@@ -255,4 +281,132 @@ i {
 .quote {
   font-family: "Passion One", cursive;
   font-size: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    margin: 185px 16%;
+  }
+  .concept-img {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .about-info {
+    width: 80%;
+  }
+  .about-info img {
+    margin: 0 0 50px 0;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-section img {
+    margin: 0;
+  }
+  .about-info {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .hamburger {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    top: 11px;
+  }
+  .header {
+    width: 100%;
+    display: none;
+  }
+
+  .header.active {
+    display: flex;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 7px;
+  }
+  .header ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .header li {
+    text-align: center;
+  }
+
+  .main {
+    margin: 91px 13%;
+  }
+
+  .main-info {
+    align-items: center;
+    width: 100%;
+  }
+
+  .main-info img {
+    object-fit: cover;
+    width: 250px;
+    height: 71px;
+  }
+
+  .main-info p {
+    max-width: 80%;
+    font-size: 14px;
+  }
+
+  .concept-img {
+    margin-right: 0px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .email-div {
+    display: none;
+  }
+
+  .link-div {
+    display: none;
+  }
+  .skills-list {
+    margin: 0 8%;
+  }
+  .about-section {
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .about-info h2 {
+    margin-bottom: 20px;
+  }
+
+  .about-info img {
+    float: none;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .about-section img {
+    width: 221px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .concept-img {
+    width: 200px;
+    height: 200px;
+  }
 }
