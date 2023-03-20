@@ -23,12 +23,21 @@
   <body>
     <div id="beginning" class="everything">
       <nav class="navbar">
-        <div class="brand-title"></div>
+        <div class="brand-title">
+          <a class="" href="#beginning"
+            ><img
+              class="concept-img"
+              src="./images/Ross-concept-white-noBackground.png"
+              alt=""
+          /></a>
+        </div>
         <a href="#" class="hamburger"><i class="fa-solid fa-bars"></i></a>
         <div class="header">
           <ul>
             <li><a class="nav-a" href="#beginning">Home</a></li>
-            <li><a class="nav-a" href="#about">About</a></li>
+            <li>
+              <a class="nav-a" href="#about">About</a>
+            </li>
             <li>
               <a
                 class="nav-a"
@@ -45,7 +54,7 @@
                 >Linkedin</a
               >
             </li>
-            <li><a class="nav-a">Contact</a></li>
+            <li><a class="nav-a" href="#contact-section">Contact</a></li>
           </ul>
         </div>
       </nav>
@@ -180,14 +189,120 @@
             It has been a steep learning curve but has also been an exciting and
             fulfilling experience. I am currently learning full stack web
             development using Javascript, React, and Nodejs to broaden my
-            knowledge at TrueCoders. With these skills I want to create modern,
-            responsive, quality websites and other applications. I would love to
-            have a conversation about my passion in the tech world with
+            knowledge at TrueCoders again. With these skills I want to create
+            modern, responsive, quality websites and other applications. I would
+            love to have a conversation about my passion in the tech world with
             you!<span class="quote">"</span>
           </p>
         </div>
       </div>
+      <div class="testimonials-section">
+        <div>
+          <h2>TESTIMONIALS</h2>
+          <h3>The people that know me best:</h3>
+        </div>
+        <div class="testimonial">
+          <img
+            id="scott"
+            src="./images/ScottJohnson.jpg"
+            alt="Scott Johnson, Manager"
+          />
 
+          <p>
+            <span class="quote">"</span>
+            Ross is a dedicated, passionate and loyal professional. He has
+            proven that he is capable of learning new skills quickly across a
+            broad range of scope within IT disciplines. His background in
+            manufacturing gives him a solid foundation in process improvement
+            and team dynamics, and a perspective of the end-user, which all
+            enhances his ability to deliver quality work.<span class="quote"
+              >"</span
+            >
+          </p>
+        </div>
+        <div class="testimonial">
+          <img
+            id="david"
+            src="./images/DavidFox.jpg"
+            alt="David Fox, Manager"
+          />
+
+          <p>
+            <span class="quote">"</span>
+            Ross is a go-getter. From his first [remote] day on the job, he was
+            willing to learn new things and get into technology and systems he
+            hadn't been exposed to previously.<span class="quote">"</span>
+            <br />
+            <br />
+            <span class="quote">"</span>In the time that I managed Ross, his
+            continued focus on customer experience and commitment to project
+            deliverables kept his projects on track and in the green.<span
+              class="quote"
+              >"</span
+            >
+          </p>
+        </div>
+      </div>
+      <div id="contact-section" class="contact-us">
+        <div class="contact-head">
+          <h2>CONTACT ME</h2>
+          <h3>"I would love to have a conversation over coffee!"</h3>
+          <div class="contact">
+            <div class="contact-us-form-div">
+              <form class="contact-form" action="">
+                <div id="first" class="field">
+                  <input
+                    class="form-input"
+                    id="fName"
+                    name="fName"
+                    type="text"
+                    data-placeholder="John"
+                    required
+                  />
+                  <label for="fName">First Name</label>
+                </div>
+                <div id="second" class="field">
+                  <input
+                    class="form-input"
+                    id="lName"
+                    name="lName"
+                    type="text"
+                    data-placeholder="Doe"
+                    required
+                  />
+                  <label for="lName">Last Name</label>
+                </div>
+                <div id="third" class="field">
+                  <input
+                    class="form-input"
+                    id="email"
+                    name="email"
+                    type="email"
+                    data-placeholder="let.email@value.com"
+                    required
+                  />
+                  <label for="email">Email</label>
+                </div>
+                <div id="fourth" class="field">
+                  <textarea
+                    class="form-input"
+                    id="message"
+                    name="message"
+                    type="textarea"
+                    data-placeholder="Nice to meet you! I also like to Saltwater fishing!"
+                    required
+                  ></textarea>
+                  <label for="message">Message</label>
+                </div>
+
+                <button id="submit1" type="submit">
+                  <i id="send" class="fa-solid fa-paper-plane"></i>Send
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer></footer>
     </div>
   </body>
