@@ -456,6 +456,7 @@ contact-form input:active {
   color: var(--font-color-grey);
   width: 200px;
   margin: 20px auto;
+  background-color: white;
 }
 
 #submit1:hover #send {
