@@ -7,8 +7,10 @@
     <link rel="stylesheet" href="./index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Passion+One&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
 
@@ -17,6 +19,20 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "username",
+          Password: "password",
+          To: "them@website.com",
+          From: "you@isp.com",
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script>
     <script src="./index.js" defer></script>
     <title>RossBeckham.Portfolio</title>
   </head>
@@ -75,9 +91,9 @@
             alt=""
           />
         </div>
-        <!-- <div class="email-div">
+        <div class="email-div">
           <a href="mailto:rossh.beckham@gmail.com">rossh.beckham@gmail.com</a>
-        </div> -->
+        </div>
         <div class="link-div">
           <a
             href="https://github.com/saltlifegoodlife?tab=repositories"
@@ -197,11 +213,11 @@
         </div>
       </div>
       <div class="testimonials-section">
-        <div>
+        <div class="testimonial-head">
           <h2>TESTIMONIALS</h2>
-          <h3>The people that know me best:</h3>
+          <h3>The people I have worked with that know me best:</h3>
         </div>
-        <div class="testimonial">
+        <div class="testimonial scottTest">
           <img
             id="scott"
             src="./images/ScottJohnson.jpg"
@@ -220,7 +236,7 @@
             >
           </p>
         </div>
-        <div class="testimonial">
+        <div class="testimonial davidTest">
           <img
             id="david"
             src="./images/DavidFox.jpg"
@@ -249,7 +265,7 @@
           <h3>"I would love to have a conversation over coffee!"</h3>
           <div class="contact">
             <div class="contact-us-form-div">
-              <form class="contact-form" action="">
+              <form class="contact-form" action="" onsubmit="">
                 <div id="first" class="field">
                   <input
                     class="form-input"
@@ -298,6 +314,10 @@
                 <button id="submit1" type="submit">
                   <i id="send" class="fa-solid fa-paper-plane"></i>Send
                 </button>
+                <p>
+                  Currently not working, please send to my email:
+                  RossH.Beckham@gmail.com
+                </p>
               </form>
             </div>
           </div>
