@@ -20,19 +20,7 @@
       defer
     ></script>
     <script src="https://smtpjs.com/v3/smtp.js" defer></script>
-    <script>
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.elasticemail.com",
-          Username: "username",
-          Password: "password",
-          To: "them@website.com",
-          From: "you@isp.com",
-          Subject: "This is the subject",
-          Body: "And this is the body",
-        }).then((message) => alert(message));
-      }
-    </script>
+   
     <script src="./index.js" defer></script>
     <title>RossBeckham.Portfolio</title>
   </head>
@@ -40,7 +28,7 @@
     <div id="beginning" class="everything">
       <nav class="navbar">
         <div class="brand-title">
-          <a class="" href="#beginning"
+          <a class="brand" href="#beginning"
             ><img
               class="concept-img"
               src="./images/Ross-concept-white-noBackground.png"
@@ -181,7 +169,7 @@
           <p>
             <span class="quote">"</span>Hi, my name is Ross Beckham. I am a Web
             Developer and Software Engineer. I have always had a passion with
-            computers and took a few college classes in Computer Science. Life
+            computers and took courses in college for Computer Science. Life
             took a turn so I had to take a break from school. I started working
             at a production plant as a production team leader that taught me
             quality, standardization, and team work skills that I now use in my
@@ -205,16 +193,16 @@
             It has been a steep learning curve but has also been an exciting and
             fulfilling experience. I am currently learning full stack web
             development using Javascript, React, and Nodejs to broaden my
-            knowledge at TrueCoders again. With these skills I want to create
+            knowledge at TrueCoders. With these skills I will create
             modern, responsive, quality websites and other applications. I would
-            love to have a conversation about my passion in the tech world with
+            love the opportunity to have a conversation about my passion in the tech world with
             you!<span class="quote">"</span>
           </p>
         </div>
       </div>
       <div class="testimonials-section">
         <div class="testimonial-head">
-          <h2>TESTIMONIALS</h2>
+          <h2><u>TESTIMONIALS</u></h2>
           <h3>The people I have worked with that know me best:</h3>
         </div>
         <div class="testimonial scottTest">
@@ -223,8 +211,8 @@
             src="./images/ScottJohnson.jpg"
             alt="Scott Johnson, Manager"
           />
-
           <p>
+            <u>Scott Johnson: Solutions Architect at Crossvale Inc. </u><br />
             <span class="quote">"</span>
             Ross is a dedicated, passionate and loyal professional. He has
             proven that he is capable of learning new skills quickly across a
@@ -242,21 +230,25 @@
             src="./images/DavidFox.jpg"
             alt="David Fox, Manager"
           />
-
-          <p>
-            <span class="quote">"</span>
-            Ross is a go-getter. From his first [remote] day on the job, he was
-            willing to learn new things and get into technology and systems he
-            hadn't been exposed to previously.<span class="quote">"</span>
-            <br />
-            <br />
-            <span class="quote">"</span>In the time that I managed Ross, his
-            continued focus on customer experience and commitment to project
-            deliverables kept his projects on track and in the green.<span
-              class="quote"
-              >"</span
-            >
-          </p>
+          
+            <p>
+              <u>David Fox: Director, Solutions/Consulting Integration Architect</u><br />
+              <span class="quote">"</span>
+              Ross is a go-getter. From his first [remote] day on the job, he
+              was willing to learn new things and get into technology and
+              systems he hadn't been exposed to previously.<span class="quote"
+                >"</span
+              >
+              <br />
+              <br />
+              <span class="quote">"</span>In the time that I managed Ross, his
+              continued focus on customer experience and commitment to project
+              deliverables kept his projects on track and in the green.<span
+                class="quote"
+                >"</span
+              >
+            </p>
+          </div>
         </div>
       </div>
       <div id="contact-section" class="contact-us">
@@ -323,7 +315,7 @@
           </div>
         </div>
       </div>
-      <footer></footer>
+      <div class="footer"><p>&copy 2023 created by: Ross Beckham </p></div>
     </div>
   </body>
 </html>
