@@ -75,11 +75,23 @@ body {
   text-decoration: none;
   color: white;
   padding: 28px;
+  background: linear-gradient(to left, #2e2e2e00 50%, #6e6e6e 50%) right;
+  background-size: 200%;
 }
 
 .nav-a:hover,
 .nav-a:focus {
-  background-color: var(--font-color-grey);
+  transition: 0.2s ease-out;
+  background-position: left;
+}
+#resume {
+  background: linear-gradient(to left, #2e2e2e00 50%, #00b5d4 50%) right;
+  background-size: 200%;
+}
+#resume:hover,
+#resume:focus {
+  transition: 0.2s ease-out;
+  background-position: left;
 }
 
 .main {
