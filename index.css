@@ -76,7 +76,7 @@ body {
   color: white;
   padding: 28px;
   background: linear-gradient(to left, #2e2e2e00 50%, #6e6e6e 50%) right;
-  background-size: 200%;
+  background-size: 201%;
 }
 
 .nav-a:hover,
@@ -86,7 +86,7 @@ body {
 }
 #resume {
   background: linear-gradient(to left, #2e2e2e00 50%, #00b5d4 50%) right;
-  background-size: 200%;
+  background-size: 201%;
 }
 #resume:hover,
 #resume:focus {
