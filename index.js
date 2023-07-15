@@ -69,3 +69,30 @@ const FloatLabel = (() => {
 })();
 
 FloatLabel.init();
+
+const submitForm = document.getElementsByClassName("contact-form")[0];
+const firstName = document.getElementById("fName");
+const lastName = document.getElementById("lName");
+const message = document.getElementById("message");
+const sender = document.getElementById("email");
+
+submitForm.addEventListener("submit", (e) => {
+  console.log("Sending message...");
+  e.preventDefault();
+  Email.send({
+    SecureToken: "175ddd3f-18b0-4ccc-b7ec-6156c67dadc9",
+    To: "rossh.beckham@gmail.com",
+    From: "rossh.beckham@gmail.com",
+    Subject: "New Message from Portfolio",
+    Body:
+      "First Name: " +
+      firstName.value +
+      "<br> Last Name: " +
+      lastName.value +
+      "<br> Email: " +
+      sender.value +
+      "<br> Message: " +
+      message.value,
+  }).then(message);
+  submitForm.reset();
+});
