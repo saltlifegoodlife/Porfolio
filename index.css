@@ -546,6 +546,9 @@ contact-form input:active {
   .about-info {
     width: 60%;
   }
+  .testimonial {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 760px) {
