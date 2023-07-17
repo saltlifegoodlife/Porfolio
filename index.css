@@ -359,6 +359,11 @@ body {
   border-radius: 100px;
   margin: 20px;
 }
+#andrea {
+  width: 240px;
+  height: 230px;
+  border-radius: 130px;
+}
 
 .testimonial p {
   font-family: "Cormorant Garamond", serif;
